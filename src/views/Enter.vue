@@ -13,11 +13,11 @@
         <span class="button  is-medium is-link"
               @click="$router.push({ name: 'enter', params: {
                 stage: 'signup', surveyID: surveyID,
-              }})">No</span>
+              }})">No (sign up)</span>
         <span class="button is-medium is-info"
               @click="$router.push({ name: 'enter', params: {
                 stage: 'login', surveyID: surveyID,
-              }})">Yes</span>
+              }})">Yes (log in)</span>
       </div>
     </div>
     <div v-else-if="stage === 'login' || stage === 'signup'" class="been">
@@ -27,7 +27,7 @@
           Please enter the email address or phone number that you used before:
         </h2>
         <h2 v-else>
-          Please enter an email address or phone number
+          Please enter an email address or phone number:
         </h2>
       </template>
 
